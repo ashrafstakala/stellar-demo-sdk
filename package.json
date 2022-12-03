@@ -1,0 +1,14 @@
+{
+  "name": "stellar-demo-sdk",
+  "version": "1.0.0",
+  "description": "stellar sdk demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ashraf stakala",
+  "license": "ISC",
+  "dependencies": {
+    "stellar-sdk": "^10.4.0"
+  }
+}
