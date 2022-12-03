@@ -19,4 +19,13 @@ pair.publicKey();
   } catch (e) {
     console.error('ERROR!', e);
   }
+
+  // Get account details and balance
+  const server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
+
+  const account = await server.loadAccount(pair.publicKey());
+  console.log('Balances for account: ' + pair.publicKey());
+  account.balances.forEach(function (balance) {
+    console.log('Type:', balance.asset_type, ', Balance:', balance.balance);
+  });
 })();
