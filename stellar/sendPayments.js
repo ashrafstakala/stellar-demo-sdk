@@ -30,7 +30,7 @@ server
         StellarSdk.Operation.payment({
           destination: destinationId,
           asset: StellarSdk.Asset.native(),
-          amount: '100',
+          amount: '500',
         }),
       )
       .addMemo(StellarSdk.Memo.text('Test Transaction'))
